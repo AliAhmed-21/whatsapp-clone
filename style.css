@@ -1,0 +1,265 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#009688 0%,#009688 130px,#d9dbd5 130px,#d9dbd5 100%);
+}
+.container{
+    position: relative;
+    width: 1396px;
+    max-width: 97%;
+    height: calc(100vh - 40px);
+    background: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0,0.06 ), 0 2px 5px 0rgba(0, 0, 0,0.06 ) ;
+    display: flex;
+}
+
+.container .leftside{
+    position: relative;
+    flex: 30%;
+    background: fff;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+.container .rightside{
+    position: relative;
+    flex: 70%;
+    background: #e5ddd5;
+
+}
+
+.container .rightside::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:url(images/background.png);
+    opacity: 0.15; 
+}
+.header{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: #ededed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+.cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+h2{
+    cursor: pointer;
+}
+
+.navicons{
+    display: flex;
+
+}
+.navicons li{
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    color: #51585c;
+    font-size: 1em;
+    margin-left: 22px;
+}
+
+.searchbar{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+}
+.searchbar div
+{
+    width: 100%;
+    
+}
+ .searchbar div input {
+    width: 100%;
+    outline: none;
+    border: none;
+    background: #fff;
+    padding: 6px;
+    height: 38px;
+    border-radius: 38px;
+    font-size: 14px;
+    padding-left: 40px;
+
+}
+.searchbar div i{
+    position: absolute;
+    left: 30px;
+    top: 14px;
+    font-size: 1.2em;
+}
+.chatlist
+{
+    position: relative;
+    height: calc(100% - 110px);
+    overflow-y: auto;
+    
+}
+.chatlist .block
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.06 );
+    cursor: pointer;
+}
+.chatlist .block .imgbx
+{
+    position: relative;
+    min-width: 45px;
+    height: 45px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.chatlist .block .details
+{
+    position: relative;
+    width: 100%;
+}
+.chatlist .block .details .listhead
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+
+}
+.chatlist .block .details h4
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #111;
+}
+.chatlist .block .details .time
+{
+    font-size: 0.75em;
+    color: rgb(27, 26, 26);
+}
+.message{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
+.message p
+{
+    color: rgb(27, 26, 26);
+    font-size: 0.9em;
+}
+.block:hover{
+    background-color:rgba(195, 195, 195, 0.932);
+    
+}
+
+.message b
+{
+    background: #009688;
+    color: #fff;
+    min-width: 20px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75em;
+}
+/* <!--rightside--> */
+.userimage
+{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+
+}
+
+.imagetext
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagetext h4
+{
+    font-weight: 500;
+    line-height: 1.2em;
+    margin-left: 15px ;
+
+}
+.imagetext h4 span
+{
+  font-size: 0.8em;
+  color: #555;
+  cursor: pointer;
+}
+
+
+.chatarea
+{
+    position: relative;
+    width: 100%;
+    height: calc(100% - 120px);
+    padding: 50px;
+}
+
+.chatbox-input
+{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: #f0f0f0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.chatbox-input i:nth-child(1)
+{
+    margin-right: 15px;
+}
+.chatbox-input i
+{
+    cursor: pointer;
+    font-size: 1em;
+    color: #51585c;
+}
+.chatbox-input input
+{
+    position: relative;
+    width: 90%;
+    margin: 0 20px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1em;
+}
+
